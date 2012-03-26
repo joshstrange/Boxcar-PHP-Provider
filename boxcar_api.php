@@ -151,7 +151,7 @@ class boxcar_api {
 		$notification = array(
 			'token'                                 => $this->api_key,
 			'secret'                                => $this->secret,
-			'email'                                 => !is_null($email) ? md5($email) : null,
+			'email'                                 => !is_null($email) ? $email : null,
 			'notification[from_screen_name]'        => $name,
 			'notification[message]'                 => $message,
 			'notification[from_remote_service_id]'  => $id,
